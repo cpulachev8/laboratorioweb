@@ -1,0 +1,16 @@
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    margin: 25px auto;
+    width: 90%;
+    background-color: rgb(183, 213, 238);
+    color: #1422ee;
+    padding: 10px 0;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 1px rgb(218, 248, 170);
+}

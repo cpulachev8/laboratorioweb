@@ -1,0 +1,30 @@
+#carrusel {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    border-style: outset;
+    border-radius: 3em;
+    font-size: 12px;
+}
+
+#carrusel img {
+    border-radius: 3em;
+}
+
+.fade-in {
+    animation: move 2s;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        margin-left: 20px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/lista.js"></script>
+    <link rel="stylesheet" href="/css/lista.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <!-- CRUD: Create, Read, Update, Delete
+        ABM: Altas, Bajas y Modificaciones -->
+        <h1>Lista de Alumnos (CRUD) o (ABM)</h1>
+        <table id="tblAlumnos">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombres</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- table row: Fila tabla -->
+                <!-- <tr>
+                    <td>123</td>
+                    <td>Christian Pulache</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>Iván Ruiz</td>
+                </tr> -->
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+        <br>
+        <button onclick="listarAlumnos()">Listar alumnos</button>
+        <a href="/pages/nuevo-alumno.html">Nuevo</a>
+    </div>
+</body>
+
+</html>

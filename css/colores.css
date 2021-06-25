@@ -1,0 +1,14 @@
+.rectangulo {
+    float: left;
+    height: 350px;
+    width: 30%;
+    margin: 1%;
+    border: 1px solid;
+}
+
+.botones {
+    margin: 10px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}

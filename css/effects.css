@@ -1,0 +1,48 @@
+/**************** EFECTO 2 *******************/
+
+.pelota {
+    border: 1px solid #434343;
+    width: 30px;
+    height: 30px;
+    background-color: #b80a0a;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+/**************** EFECTO 3 *******************/
+
+.caja {
+    border: 1px solid #b80a0a;
+    width: 30%;
+    height: 40px;
+    position: relative;
+}
+
+.relleno {
+    background-color: #3c2285;
+}
+
+
+/**************** EFECTO 3 *******************/
+
+.caja2 {
+    border: 1px solid #b80a0a;
+    width: 15%;
+    height: 40px;
+    float: left;
+    margin-left: 15px;
+}
+
+.botones {
+    margin-top: 30px;
+    position: absolute;
+}
+
+.oculto {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}

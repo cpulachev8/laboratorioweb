@@ -1,0 +1,145 @@
+/* Introducción al Responsive Web Designer - Diseño Web Adaptable */
+
+
+/* Nos permite realizar páginas web adaptables a todos los dispositivos ya sean computadoras, tables o celulares */
+
+
+/* css - responsive-uno */
+
+
+/*Selector universal*/
+
+* {
+    box-sizing: border-box;
+    /* esta propiedad nos permite que no se vea alterado el ancho y alto de un contenedor a pesar de agregar border y relleno */
+}
+
+.div-uno {
+    width: 350px;
+    height: 220px;
+    border: 10px solid red;
+}
+
+.div-dos {
+    width: 350px;
+    height: 220px;
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.div-tres {
+    width: 350px;
+    height: 220px;
+    border: 5px solid green;
+}
+
+
+/* css - responsive dos */
+
+
+/* El principio de vista de cuadrícula receptiva usan la mayoría de sitios web para aplicar RWD */
+
+.cuadricula {
+    width: 100%;
+    height: 600px;
+    border: 1px solid gray;
+}
+
+.cuadricula div {
+    width: 8.33%;
+    border: 1px solid gray;
+    height: 600px;
+    float: left;
+}
+
+
+/* css - responsive-tres.html */
+
+.div-media {
+    width: 100%;
+    border: 1px solid blue;
+    height: 500px;
+}
+
+
+/* media-query 
+ tipo: screen se tiene que aplicar a computadoras, tables o celulares.
+ and (expressión)
+ */
+
+@media screen and (min-width: 600px) {
+    .div-media {
+        background-color: coral;
+        color: #ffffff;
+    }
+    /* .lista li {
+        float: left
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .div-media {
+        background-color: cornflowerblue;
+        border: 2px solid red;
+        color: #ffffff;
+    }
+    .lista li {
+        clear: left;
+    }
+}
+
+.lista li {
+    list-style: none;
+    margin: 5px 15px;
+    float: left;
+}
+
+
+/* css - responsive-cuatro.html */
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    width: 25%;
+    margin-left: 0;
+}
+
+#menu ul li {
+    background-color: rgb(147, 196, 236);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.contenido {
+    padding: 5px 30px;
+    width: 75%;
+}
+
+.contenido p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #menu ul {
+        width: 100%;
+    }
+    .contenido,
+    #menu {
+        width: 100%;
+    }
+}

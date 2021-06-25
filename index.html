@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Hotel Travel</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/hotel.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <img src="images/image-travel.jpg" alt="Imagen principal" />
+    <ul onclick="mostrarMensaje('click desde menu');">
+        <li class="li-selected"><a>Reserva</a></li>
+        <li class="li-disabled"><a href="/pages/hoteles.html">Hoteles</a></li>
+        <li>Destinos</li>
+        <li>Ofertas</li>
+        <li>Contáctanos</li>
+    </ul>
+
+    <div class="main-content">
+        <label id="lblTitulo">RESERVA TU HABITACIÓN</label>
+        <div class="div-row">
+            <label for="cbxCiudades" id="lblCiudad">Ciudad</label>
+            <select id="cbxCiudades">
+                <option>Piura</option>
+                <option>Chiclayo</option>
+                <option>Trujillo</option>
+            </select>
+        </div>
+        <div class="div-row">
+            <label for="cbxHoteles" id="lblHotel">Hotel</label>
+            <select id="cbxHoteles">
+                <option>Hotel Centro</option>
+                <option>Hotel Luna</option>
+            </select>
+        </div>
+        <div class="div-row">
+            <label for="txtCantHuespedes" id="lblCantHuespedes">Cantidad Huéspedes</label>
+            <input type="number" id="txtCantHuespedes" min="1" max="5" />
+        </div>
+        <div class="div-row center">
+            <button onclick="reservarHabitacion()">Reservar</button>
+            <button onclick="cambiarColor()">Cambiar Color</button>
+        </div>
+        <div class="message" id="content-message">
+            <p>Mensaje de alerta</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            Todos los derechos de autor
+        </div>
+    </footer>
+</body>
+<script>
+    ocultarMensaje();
+</script>
+
+</html>

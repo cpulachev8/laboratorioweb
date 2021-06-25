@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+}
+
+ul {
+    margin: 5px 0;
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid #6C8EBF;
+    background-color: #DAE8FC;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.li-selected {
+    background-color: #FFF2CC;
+}
+
+.li-disabled {
+    background-color: #7472724f;
+    color: #777;
+    cursor: none;
+}
+
+li:hover {
+    background-color: #FFF2CC;
+}
+
+.li-disabled:hover {
+    background-color: #7472724f;
+    color: #777;
+}
+
+.main-content {
+    border: 1px solid blue;
+    margin: 80px auto;
+    width: 70%;
+    height: auto;
+    padding: 15px 15px;
+}
+
+.div-row {
+    display: block;
+    padding: 10px 20px;
+}
+
+select,
+input,
+button {
+    height: 30px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+select {
+    width: 70%;
+}
+
+button {
+    background-color: #DAE8FC;
+    font-size: 1em;
+    width: 200px;
+}
+
+.div-row label {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/****************** Estilos para el pie de página **********************/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: rgb(0, 153, 204);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.message {
+    text-align: center;
+    color: #0a5210;
+}
+
+.message p {
+    font-weight: bold;
+}

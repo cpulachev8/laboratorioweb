@@ -1,0 +1,7 @@
+table tbody tr td {
+    border: 1px dashed blue;
+}
+
+table thead tr th {
+    border: 2px dashed firebrick;
+}
