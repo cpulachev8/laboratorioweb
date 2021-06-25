@@ -1,7 +1,18 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-spacing: 0;
+}
+
 table tbody tr td {
-    border: 1px dashed blue;
+    padding: 10px;
+    border-bottom: 1px solid blue;
 }
 
 table thead tr th {
-    border: 2px dashed firebrick;
+    background-color: firebrick;
+    color: white;
+    padding: 5px;
 }
