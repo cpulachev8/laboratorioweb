@@ -16,3 +16,16 @@ table thead tr th {
     color: white;
     padding: 5px;
 }
+
+
+/********************ESTILOS SEMANA 12***********************/
+
+form {
+    padding: 5px;
+}
+
+input,
+label,
+select {
+    margin: 5px;
+}

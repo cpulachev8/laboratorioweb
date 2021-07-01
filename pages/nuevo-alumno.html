@@ -7,15 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/lista.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="/css/lista.css">
 </head>
 
 <body>
     <a href="/pages/lista.html">Atrás</a>
-    <h1>Nuevo Alumno</h1>
-    <label for="">Nombre</label>
-    <input type="text" id="nombre">
-    <br><br>
-    <button onclick="agregarAlumno()">Guardar</button>
+    <form action="/pages/registro.php" method="POST">
+        <h1>Nuevo Alumno</h1>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" readonly="true">
+        <br>
+        <label for="fecha-nac">Fecha Nacimiento</label>
+        <input type="date" patter="mm/dd/yyyy" id="fecha-nac" name="fechanac" />
+        <br>
+        <label for="Sexo">Sexo</label>
+        <input type="radio" name="sexo" id="rad-masculino" value="M"><label for="rad-masculino">Masculino</label>
+        <input type="radio" name="sexo" id="rad-femenino" value="F"><label for="rad-femenino">Femenino</label>
+        <br>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese correo" disabled>
+        <br>
+        <label for="tipo-doc">Tipo Documento</label>
+        <select name="tipodoc" id="tipo-doc">
+            <option value="1">DNI</option>
+            <option value="2">Pasaporte</option>
+            <option value="3">Carnet de Extranjería</option>
+        </select>
+        <br>
+        <label for="num-documento">Número de documento</label>
+        <input type="text" name="numdoc" id="num-documento">
+        <br>
+        <label for="">Deportes Favoritos</label>
+        <input type="checkbox" name="" id="futbol"><label for="futbol">Fútbol</label>
+        <input type="checkbox" name="" id="voley"><label for="voley">Vóley</label>
+        <input type="checkbox" name="" id="basquet"><label for="basquet">Básquet</label>
+        <input type="checkbox" name="" id="beisbol"><label for="beisbol">Bésibol</label>
+        <br>
+        <label for="">Edad</label>
+        <input type="number" name="" id="">
+        <br>
+        <label for="">Subir Foto</label>
+        <input type="file" name="" id="">
+        <br>
+        <label for="">Contraseña</label>
+        <input type="password" name="" id="">
+        <br>
+        <label for="">Departamento</label>
+        <select>
+            <option value="">Piura</option>
+            <option value="">Lima</option>
+            <option value="">Lambayeque</option>
+            <option value="">La Libertad</option>
+        </select>
+        <br>
+        <label for="">Provincia</label>
+        <select>
+            <option value="">Piura</option>
+            <option value="">Ayabaca</option>
+            <option value="">Sullana</option>
+            <option value="">Talara</option>
+        </select>
+        <br>
+        <label for="">Teléfono</label>
+        <input type="tel" name="telefono" id="" pattern="***-999-999">
+        <br><br>
+        <!-- <button onclick="agregarAlumno()">Guardar</button> -->
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 
 </html>
