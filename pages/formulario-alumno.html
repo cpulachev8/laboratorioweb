@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario-alumno.css">
+    <script src="/js/validaciones.js"></script>
+    <title>Registro Alumno</title>
+</head>
+
+<body>
+    <form action="/php/registro-alumno.php" method="POST">
+        <div class="formulario">
+            <div class="fila">
+                <div class="col-3">
+                    <label for="test">Test</label>
+                </div>
+                <div class="col-3">
+                    <!-- <input type="number" id="test" name="test" required title="Ingrese un valor" min="5" max="20" step="5"> -->
+                    <input type="text" id="test" name="test" required onkeydown="return validarTexto(event)">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna col-3"><label for="tipoDocumento">Tipo Documento</label></div>
+                <div class="columna">
+                    <select>
+                        <option value="">DNI</option>
+                        <option value="">Pasaporte</option>
+                        <option value="">Carnet de Extranjería</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna col-3">Número de Documento</div>
+                <div class="columna">
+                    <input type="text" name="numDocumento" id="" required maxlength="8" onkeydown="return validarNumero(event);">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-3">
+                    <label for="nombres">Nombres</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="nombres" required pattern="[A-Za-z áéíóúÁÉÍÓÚ]{3,20}" onkeydown="return validarTexto(event)">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-3">
+                    <label for="apellidos">Apellidos</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="apellidos" required pattern="[A-Za-z áéíóúÁÉÍÓÚ]{3,20}" onkeydown="return validarTexto(event)">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-3">
+                    <label for="celular">Celular</label>
+                </div>
+                <div class="col-3">
+                    <input type="tel" id="celular" name="celular" required pattern="[0-9]{9}" maxlength="9">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-3">
+                    <label for="correo">Correo</label>
+                </div>
+                <div class="col-3">
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@dominio.com">
+                </div>
+            </div>
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
+</body>
+
+</html>
