@@ -1,2 +1,2 @@
-# labortorioweb
+# laboratorioweb
 Laboratorios Web (básico)
