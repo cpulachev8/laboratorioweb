@@ -1,5 +1,5 @@
 <?php
-    echo "Mi primera página";
+    echo "Bienvenidos al Sistema, espere que está cargando";
 ?>
 
 <script>
